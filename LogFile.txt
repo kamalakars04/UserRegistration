@@ -275,3 +275,44 @@
 2020-10-06 17:33:29.4798 WARN User entry is in invalid Format
 2020-10-06 17:33:33.6394 WARN User entry is in invalid Format
 2020-10-06 17:33:42.8922 INFO User entered a validpassword
+2020-10-06 17:38:38.5525 INFO User entered a valid first name
+2020-10-06 17:38:40.0657 INFO User entered a valid last name
+2020-10-06 17:38:44.2272 INFO User entered a valid Email
+2020-10-06 17:38:51.1828 INFO User entered a valid mobile number
+2020-10-06 17:38:54.9953 WARN User entry is in invalid Format
+2020-10-06 17:39:05.7375 WARN User entry is in invalid Format
+2020-10-06 17:39:16.7027 INFO User entered a validpassword
+2020-10-06 17:40:12.4019 INFO User entered a valid first name
+2020-10-06 17:40:13.7147 INFO User entered a valid last name
+2020-10-06 17:40:20.4441 INFO User entered a valid Email
+2020-10-06 17:40:24.5346 INFO User entered a valid mobile number
+2020-10-06 17:41:04.5735 INFO User entered a valid first name
+2020-10-06 17:41:06.1290 INFO User entered a valid last name
+2020-10-06 17:41:09.2901 INFO User entered a valid Email
+2020-10-06 17:41:12.9433 INFO User entered a valid mobile number
+2020-10-06 17:41:19.6112 WARN User entry is in invalid Format
+2020-10-06 17:41:29.6506 INFO User entered a validpassword
+2020-10-06 17:42:26.1921 INFO User entered a valid first name
+2020-10-06 17:42:27.4236 INFO User entered a valid last name
+2020-10-06 17:42:31.1817 INFO User entered a valid Email
+2020-10-06 17:42:38.2517 INFO User entered a valid mobile number
+2020-10-06 17:42:45.2289 INFO User entered a validpassword
+2020-10-06 19:12:28.6302 INFO User entered a valid first name
+2020-10-06 19:12:32.0145 INFO User entered a valid last name
+2020-10-06 19:12:43.7396 INFO User entered a valid Email
+2020-10-06 19:13:02.4665 WARN User entry is in invalid Format
+2020-10-06 19:13:10.6082 WARN User entry is in invalid Format
+2020-10-06 19:13:20.3063 WARN User entry is in invalid Format
+2020-10-06 19:14:52.0902 INFO User entered a valid first name
+2020-10-06 19:14:54.3164 INFO User entered a valid last name
+2020-10-06 19:15:00.0980 WARN User entry is in invalid Format
+2020-10-06 19:15:11.0405 INFO User entered a valid first name
+2020-10-06 19:15:13.2247 INFO User entered a valid last name
+2020-10-06 19:15:17.0991 INFO User entered a valid Email
+2020-10-06 19:15:21.6419 WARN User entry is in invalid Format
+2020-10-06 19:15:29.6723 INFO User entered a valid mobile number
+2020-10-06 19:15:34.9703 WARN User entry is in invalid Format
+2020-10-06 19:15:39.6577 WARN User entry is in invalid Format
+2020-10-06 19:15:45.2494 WARN User entry is in invalid Format
+2020-10-06 19:15:53.2988 WARN User entry is in invalid Format
+2020-10-06 19:16:01.4803 INFO User entered a validpassword
