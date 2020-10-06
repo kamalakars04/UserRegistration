@@ -147,3 +147,117 @@
 2020-10-06 15:54:57.6926 INFO User entered a valid Email
 2020-10-06 15:55:06.6530 INFO User entered a valid mobile number
 2020-10-06 15:55:11.6333 INFO User entered a validpassword
+2020-10-06 15:59:50.1435 INFO User entered a valid first name
+2020-10-06 15:59:51.2904 INFO User entered a valid last name
+2020-10-06 15:59:57.7040 INFO User entered a valid Email
+2020-10-06 16:00:04.4704 INFO User entered a valid mobile number
+2020-10-06 16:00:14.5230 WARN User entry is in invalid Format
+2020-10-06 16:00:34.4223 INFO User entered a validpassword
+2020-10-06 16:00:42.0244 INFO User entered a valid first name
+2020-10-06 16:00:43.3824 INFO User entered a valid last name
+2020-10-06 16:00:48.3043 INFO User entered a valid Email
+2020-10-06 16:00:52.3216 INFO User entered a valid mobile number
+2020-10-06 16:04:20.6818 INFO User entered a valid first name
+2020-10-06 16:04:21.9903 INFO User entered a valid last name
+2020-10-06 16:04:26.7397 INFO User entered a valid Email
+2020-10-06 16:04:30.9236 INFO User entered a valid mobile number
+2020-10-06 16:04:38.0895 INFO User entered a validpassword
+2020-10-06 16:04:53.3242 INFO User entered a valid first name
+2020-10-06 16:04:54.8843 INFO User entered a valid last name
+2020-10-06 16:04:58.5679 INFO User entered a valid Email
+2020-10-06 16:05:03.5510 INFO User entered a valid mobile number
+2020-10-06 16:05:07.3918 INFO User entered a validpassword
+2020-10-06 16:06:00.8346 INFO User entered a valid first name
+2020-10-06 16:06:02.2186 INFO User entered a valid last name
+2020-10-06 16:06:07.5391 INFO User entered a valid Email
+2020-10-06 16:06:11.4163 INFO User entered a valid mobile number
+2020-10-06 16:06:14.6519 INFO User entered a validpassword
+2020-10-06 16:07:11.3933 INFO User entered a valid first name
+2020-10-06 16:07:12.8099 INFO User entered a valid last name
+2020-10-06 16:07:18.9170 WARN User entry is in invalid Format
+2020-10-06 16:07:55.7534 INFO User entered a valid first name
+2020-10-06 16:07:57.0103 INFO User entered a valid last name
+2020-10-06 16:08:01.9792 INFO User entered a valid Email
+2020-10-06 16:08:11.7509 INFO User entered a valid mobile number
+2020-10-06 16:08:16.6111 WARN User entry is in invalid Format
+2020-10-06 16:08:30.8214 INFO User entered a valid first name
+2020-10-06 16:08:32.0455 INFO User entered a valid last name
+2020-10-06 16:08:35.9780 INFO User entered a valid Email
+2020-10-06 16:08:41.0358 INFO User entered a valid mobile number
+2020-10-06 16:08:44.0348 WARN User entry is in invalid Format
+2020-10-06 16:08:54.2133 WARN User entry is in invalid Format
+2020-10-06 16:09:04.7224 WARN User entry is in invalid Format
+2020-10-06 16:09:21.9496 INFO User entered a valid first name
+2020-10-06 16:09:24.1226 WARN User entry is in invalid Format
+2020-10-06 16:09:28.5048 INFO User entered a valid last name
+2020-10-06 16:09:32.3202 INFO User entered a valid Email
+2020-10-06 16:09:36.9887 INFO User entered a valid mobile number
+2020-10-06 16:09:44.2983 WARN User entry is in invalid Format
+2020-10-06 16:09:54.5168 WARN User entry is in invalid Format
+2020-10-06 16:10:02.3452 WARN User entry is in invalid Format
+2020-10-06 16:13:29.6592 INFO User entered a valid first name
+2020-10-06 16:13:31.2179 INFO User entered a valid last name
+2020-10-06 16:13:35.6278 INFO User entered a valid Email
+2020-10-06 16:13:41.1433 INFO User entered a valid mobile number
+2020-10-06 16:15:01.8060 INFO User entered a valid first name
+2020-10-06 16:15:03.5583 INFO User entered a valid last name
+2020-10-06 16:15:07.2205 INFO User entered a valid Email
+2020-10-06 16:15:12.4963 INFO User entered a valid mobile number
+2020-10-06 16:15:15.3499 WARN User entry is in invalid Format
+2020-10-06 16:15:24.1767 INFO User entered a valid first name
+2020-10-06 16:15:25.9123 INFO User entered a valid last name
+2020-10-06 16:15:30.8404 INFO User entered a valid Email
+2020-10-06 16:15:35.5224 INFO User entered a valid mobile number
+2020-10-06 16:15:39.3835 WARN User entry is in invalid Format
+2020-10-06 16:15:43.9095 WARN User entry is in invalid Format
+2020-10-06 16:16:06.6607 INFO User entered a validpassword
+2020-10-06 16:26:34.5212 INFO User entered a valid first name
+2020-10-06 16:26:35.8028 WARN User entry is in invalid Format
+2020-10-06 16:26:39.6443 INFO User entered a valid last name
+2020-10-06 16:26:43.6867 INFO User entered a valid Email
+2020-10-06 16:26:48.6173 INFO User entered a valid mobile number
+2020-10-06 16:26:58.7096 WARN User entry is in invalid Format
+2020-10-06 16:27:04.4293 WARN User entry is in invalid Format
+2020-10-06 16:27:26.4807 INFO User entered a validpassword
+2020-10-06 16:31:06.2044 INFO User entered a valid first name
+2020-10-06 16:31:07.5198 INFO User entered a valid last name
+2020-10-06 16:31:10.9010 INFO User entered a valid Email
+2020-10-06 16:31:14.8281 INFO User entered a valid mobile number
+2020-10-06 16:31:19.5920 WARN User entry is in invalid Format
+2020-10-06 16:31:25.6127 INFO User entered a validpassword
+2020-10-06 16:32:03.3510 INFO User entered a valid first name
+2020-10-06 16:32:04.8069 INFO User entered a valid last name
+2020-10-06 16:32:08.0658 INFO User entered a valid Email
+2020-10-06 16:32:12.1943 INFO User entered a valid mobile number
+2020-10-06 16:32:17.6071 WARN User entry is in invalid Format
+2020-10-06 16:32:25.0776 WARN User entry is in invalid Format
+2020-10-06 16:32:40.4531 WARN User entry is in invalid Format
+2020-10-06 16:34:12.7335 INFO User entered a valid first name
+2020-10-06 16:34:14.2189 INFO User entered a valid last name
+2020-10-06 16:34:19.3512 INFO User entered a valid Email
+2020-10-06 16:34:23.4051 INFO User entered a valid mobile number
+2020-10-06 16:34:30.8318 INFO User entered a validpassword
+2020-10-06 16:34:35.0275 INFO User entered a valid first name
+2020-10-06 16:34:36.7924 INFO User entered a valid last name
+2020-10-06 16:34:41.2598 INFO User entered a valid Email
+2020-10-06 16:34:45.4590 INFO User entered a valid mobile number
+2020-10-06 16:34:53.0650 WARN User entry is in invalid Format
+2020-10-06 16:37:48.6332 INFO User entered a valid first name
+2020-10-06 16:37:50.1700 INFO User entered a valid last name
+2020-10-06 16:37:53.7092 INFO User entered a valid Email
+2020-10-06 16:37:58.0042 INFO User entered a valid mobile number
+2020-10-06 16:38:01.7097 WARN User entry is in invalid Format
+2020-10-06 16:38:05.9165 WARN User entry is in invalid Format
+2020-10-06 16:38:23.0180 INFO User entered a validpassword
+2020-10-06 17:02:32.3009 WARN User entry is in invalid Format
+2020-10-06 17:02:35.2324 INFO User entered a valid first name
+2020-10-06 17:02:36.4746 INFO User entered a valid last name
+2020-10-06 17:02:40.3475 INFO User entered a valid Email
+2020-10-06 17:02:44.2485 INFO User entered a valid mobile number
+2020-10-06 17:02:54.1419 INFO User entered a validpassword
+2020-10-06 17:11:32.1923 INFO User entered a valid first name
+2020-10-06 17:11:33.4669 INFO User entered a valid last name
+2020-10-06 17:11:38.5889 WARN User entry is in invalid Format
+2020-10-06 17:11:44.2824 INFO User entered a valid Email
+2020-10-06 17:11:48.9429 INFO User entered a valid mobile number
+2020-10-06 17:11:53.6548 INFO User entered a validpassword
