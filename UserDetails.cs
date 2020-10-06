@@ -13,13 +13,15 @@ namespace UserRegistration
         public readonly Logger logger = LogManager.GetCurrentClassLogger();
 
         //constants
-        const string patternOfFirstName = "([A-Z]+)[a-zA-Z]{2,}";
-        const string patternOfLastName = "([A-Z]+)[a-zA-Z]{2,}";
+        const string patternOfFirstName = "^([A-Z]+)[a-zA-Z]{2,}$";
+        const string patternOfLastName = "^([A-Z]+)[a-zA-Z]{2,}$";
         const string patternOfEmail = "^[a-zA-Z]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$";
+        const string patternOfMobile = "^[0-9]{2}[ ][0-9]{10}$";
         //variables
         public string firstName;
         public string lastName;
         public string email;
+        public string mobileNum;
 
         internal void userRegistration()
         {
@@ -42,7 +44,14 @@ namespace UserRegistration
             if (!ValidateFormat(email,patternOfEmail)) return;
             logger.Info("User entered a valid Email");
             Console.WriteLine("User Registration Successful");
-            
+            //User to input mobile number
+            Console.WriteLine("\nEnter the mobile number");
+            mobileNum = Console.ReadLine();
+            //if mobile number is invalid
+            if (!ValidateFormat(mobileNum, patternOfMobile)) return;
+            logger.Info("User entered a valid mobile number");
+            Console.WriteLine("User Registration Successful");
+
         }
         /// <summary>
         /// Validates the first name.
@@ -97,6 +106,16 @@ namespace UserRegistration
                 if (!TryAgain()) return false;
                 //If user wants to enter the name again
                 Console.WriteLine("\nEnter the email");
+                email = Console.ReadLine();
+                return ValidateFormat(email, pattern);
+            }
+
+            else if (pattern == patternOfMobile)
+            {
+                Console.WriteLine("Make sure that you enter country code and space then mobile number");
+                if (!TryAgain()) return false;
+                //If user wants to enter the name again
+                Console.WriteLine("\nEnter the mobile number");
                 email = Console.ReadLine();
                 return ValidateFormat(email, pattern);
             }

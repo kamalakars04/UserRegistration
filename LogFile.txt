@@ -69,3 +69,12 @@
 2020-10-06 14:50:21.2530 INFO User entered a valid first name
 2020-10-06 14:50:23.5290 WARN User entry is in invalid Format
 2020-10-06 14:50:32.3071 INFO User entered a valid last name
+2020-10-06 14:59:52.6260 WARN User entry is in invalid Format
+2020-10-06 14:59:56.2962 INFO User entered a valid first name
+2020-10-06 14:59:59.6341 INFO User entered a valid last name
+2020-10-06 15:00:12.3227 WARN User entry is in invalid Format
+2020-10-06 15:00:20.9299 INFO User entered a valid Email
+2020-10-06 15:00:26.3755 WARN User entry is in invalid Format
+2020-10-06 15:00:35.3051 WARN User entry is in invalid Format
+2020-10-06 15:00:45.6570 WARN User entry is in invalid Format
+2020-10-06 15:00:52.4807 INFO User entered a valid mobile number
