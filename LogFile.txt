@@ -1,0 +1,3 @@
+﻿2020-10-06 11:38:31.6229 WARN User entered invalid First Name
+2020-10-06 11:38:35.8119 INFO User entered a valid first name
+2020-10-06 11:38:39.3318 INFO User chose to exit the application
