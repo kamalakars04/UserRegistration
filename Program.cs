@@ -8,16 +8,16 @@ namespace UserRegistration
         {
             Console.WriteLine("Welcome To User Registration Problem");
             //Creating new Validate details instance
-            ValidateDetails validateDetails = new ValidateDetails();
+            UserDetails userDetails = new UserDetails();
             while(true)
             {
                 //Validating first name using ValidateFirstName Method
-                validateDetails.ValidateFirstName();
+                userDetails.userRegistration();
                 Console.WriteLine("Press Y to validate more details");
                 //If user wants to exit
                 if (Console.ReadLine().ToUpper() != "Y")
                 {
-                    validateDetails.logger.Info("User chose to exit the application");
+                    userDetails.logger.Info("User chose to exit the application");
                     return;
                 }
             }
