@@ -56,7 +56,7 @@ namespace UserRegistration
             Console.WriteLine("\nEnter the password");
             password = Console.ReadLine();
             //if password is invalid
-            if (password.Length < 8) return;
+            if (password.Length<8) return;
             logger.Info("User entered a validpassword");
             Console.WriteLine("User Registration Successful");
 
@@ -125,7 +125,7 @@ namespace UserRegistration
                 //If user wants to enter the name again
                 Console.WriteLine("\nEnter the mobile number");
                 email = Console.ReadLine();
-                return ValidateFormat(email, pattern);
+                return ValidateFormat(mobileNum, pattern);
             }
             else if (pattern == patternOfPassword)
             {
@@ -134,7 +134,7 @@ namespace UserRegistration
                 //If user wants to enter the name again
                 Console.WriteLine("\nEnter the password");
                 password = Console.ReadLine();
-                return ValidateFormat(email, pattern);
+                return ValidateFormat(password, pattern);
             }
             return false;
         }
