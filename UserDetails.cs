@@ -15,7 +15,7 @@ namespace UserRegistration
         //constants
         const string patternOfFirstName = "^([A-Z]+)[a-zA-Z]{2,}$";
         const string patternOfLastName = "^([A-Z]+)[a-zA-Z]{2,}$";
-        const string patternOfEmail = "^[a-zA-Z]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$";
+        const string patternOfEmail = "^[a-zA-Z0-9]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$";
         const string patternOfMobile = "^[0-9]{2}[ ][0-9]{10}$";
         const string patternOfPassword = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[^0-9a-zA-Z])(?!.*[^0-9a-zA-Z].*[^0-9a-zA-Z]).{8,}$";
         //variables
