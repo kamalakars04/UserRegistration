@@ -316,3 +316,16 @@
 2020-10-06 19:15:45.2494 WARN User entry is in invalid Format
 2020-10-06 19:15:53.2988 WARN User entry is in invalid Format
 2020-10-06 19:16:01.4803 INFO User entered a validpassword
+2020-10-06 20:06:06.9051 INFO User entered a valid first name
+2020-10-06 20:06:08.9403 WARN User entry is in invalid Format
+2020-10-06 20:06:11.8279 INFO User entered a valid last name
+2020-10-06 20:06:18.7886 WARN User entry is in invalid Format
+2020-10-06 20:06:23.6894 INFO User entered a valid Email
+2020-10-06 20:06:27.3422 WARN User entry is in invalid Format
+2020-10-06 20:06:34.6126 INFO User entered a valid mobile number
+2020-10-06 20:06:38.9621 WARN User entry is in invalid Format
+2020-10-06 20:06:42.7245 WARN User entry is in invalid Format
+2020-10-06 20:06:50.5954 INFO User entered a validpassword
+2020-10-06 20:06:56.4588 INFO User chose to exit the application
+2020-10-06 20:08:13.9476 WARN User entry is a invalid Format
+2020-10-06 20:08:20.4621 INFO User chose to exit the application
