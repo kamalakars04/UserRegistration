@@ -17,11 +17,13 @@ namespace UserRegistration
         const string patternOfLastName = "^([A-Z]+)[a-zA-Z]{2,}$";
         const string patternOfEmail = "^[a-zA-Z]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$";
         const string patternOfMobile = "^[0-9]{2}[ ][0-9]{10}$";
+        const string patternOfPassword = " ";
         //variables
         public string firstName;
         public string lastName;
         public string email;
         public string mobileNum;
+        public string password;
 
         internal void userRegistration()
         {
@@ -50,6 +52,12 @@ namespace UserRegistration
             //if mobile number is invalid
             if (!ValidateFormat(mobileNum, patternOfMobile)) return;
             logger.Info("User entered a valid mobile number");
+            //User to input Password
+            Console.WriteLine("\nEnter the password");
+            password = Console.ReadLine();
+            //if password is invalid
+            if (password.Length < 8) return;
+            logger.Info("User entered a validpassword");
             Console.WriteLine("User Registration Successful");
 
         }
@@ -117,6 +125,15 @@ namespace UserRegistration
                 //If user wants to enter the name again
                 Console.WriteLine("\nEnter the mobile number");
                 email = Console.ReadLine();
+                return ValidateFormat(email, pattern);
+            }
+            else if (pattern == patternOfPassword)
+            {
+                Console.WriteLine("Make sure there are atleast 8 characters");
+                if (!TryAgain()) return false;
+                //If user wants to enter the name again
+                Console.WriteLine("\nEnter the password");
+                password = Console.ReadLine();
                 return ValidateFormat(email, pattern);
             }
             return false;
