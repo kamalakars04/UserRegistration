@@ -25,8 +25,8 @@ namespace UserRegistration
                 }
                 registeredUsers.Add(userDetails);
             }
+            userDetails.ValidateSampleEmail();
 
-           
         }
     }
 }

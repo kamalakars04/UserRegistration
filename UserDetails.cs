@@ -71,13 +71,13 @@ namespace UserRegistration
             //If the first name is valid
             if (Regex.IsMatch(userEntry, pattern))
             {
-                Console.WriteLine("\n{0} is in valid format", userEntry);
+                Console.WriteLine("\n{0} is a valid format", userEntry);
                 return true;
             }
             //If the first Name is invalid   
             else
             {
-                logger.Warn("User entry is in invalid Format");
+                logger.Warn("User entry is a invalid Format");
                 Console.WriteLine("\nThe entered format is invalid");
                 if (!DisplayFormat(pattern)) return false;
                 return true;
@@ -154,6 +154,19 @@ namespace UserRegistration
                 return false;
             }
             return true;
+        }
+        public void ValidateSampleEmail()
+        {
+            string patternOfEmail = "^[a-zA-Z0-9]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$";
+            string[] sampleEmail = {"abc@yahoo.com","abc-100@yahoo.com","abc.100@yahoo.com","abc111@abc.com","abc-100@abc.net","abc.100@abc.com.au",
+                                    "abc@1.com","abc@gmail.com.com","abc+100@gmail.com","Abc","abc@.com.my" ,"abc123@gmail.1a","abc123@.com","abc123@.com.com",".abc@abc.com","abc()*@gmail.com","abc@%*.com","abc..2002@gmail.com","abc.@gmail.com","abc@abc@gmail.com","abc@gmail.com.1a","abc@gmail.com.aa.au"};
+            Console.WriteLine("\n\nThe valid sample emails are :");
+            foreach (string sample in sampleEmail)
+            {
+                if (Regex.IsMatch(sample, patternOfEmail))
+                    Console.WriteLine(sample);
+
+            }
         }
 
     }      
