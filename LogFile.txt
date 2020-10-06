@@ -1,3 +1,27 @@
 ﻿2020-10-06 11:38:31.6229 WARN User entered invalid First Name
 2020-10-06 11:38:35.8119 INFO User entered a valid first name
 2020-10-06 11:38:39.3318 INFO User chose to exit the application
+2020-10-06 11:49:49.9670 WARN User entered invalid First Name
+2020-10-06 11:49:54.3870 WARN User entered invalid First Name
+2020-10-06 12:02:17.4150 WARN User entered invalid First Name
+2020-10-06 12:02:27.3772 INFO User entered a valid first name
+2020-10-06 12:02:34.8992 WARN User entered invalid last Name
+2020-10-06 12:02:44.2572 WARN User entered invalid last Name
+2020-10-06 12:02:48.5345 INFO User entered a valid last name
+2020-10-06 12:03:29.8449 INFO User entered a valid first name
+2020-10-06 12:03:33.7416 WARN User entered invalid last Name
+2020-10-06 12:03:40.9938 INFO User entered a valid last name
+2020-10-06 12:05:14.9190 INFO User entered a valid first name
+2020-10-06 12:05:26.7193 INFO User entered a valid last name
+2020-10-06 12:06:00.6960 WARN User entered invalid First Name
+2020-10-06 12:06:26.9239 INFO User entered a valid first name
+2020-10-06 12:12:41.7263 WARN User entered invalid First Name
+2020-10-06 12:12:47.0502 WARN User entered invalid First Name
+2020-10-06 12:12:58.5721 WARN User entered invalid First Name
+2020-10-06 12:13:02.4250 INFO User entered a valid first name
+2020-10-06 12:15:02.5802 WARN User entered invalid First Name
+2020-10-06 12:15:06.4132 INFO User entered a valid first name
+2020-10-06 12:15:10.1587 WARN User entered invalid last Name
+2020-10-06 12:15:13.3101 WARN User entered invalid last Name
+2020-10-06 12:15:18.2393 WARN User entered invalid last Name
+2020-10-06 12:15:23.1096 INFO User entered a valid last name
