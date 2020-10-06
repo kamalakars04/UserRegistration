@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace UserRegistration
 {
@@ -8,6 +9,8 @@ namespace UserRegistration
         {
             Console.WriteLine("Welcome To User Registration Problem");
             //Creating new Validate details instance
+            List<UserDetails> registeredUsers = new List<UserDetails>();
+
             UserDetails userDetails = new UserDetails();
             while(true)
             {
@@ -18,9 +21,11 @@ namespace UserRegistration
                 if (Console.ReadLine().ToUpper() != "Y")
                 {
                     userDetails.logger.Info("User chose to exit the application");
-                    return;
+                    break;
                 }
+                registeredUsers.Add(userDetails);
             }
+
            
         }
     }
