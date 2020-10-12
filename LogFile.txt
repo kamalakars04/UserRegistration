@@ -329,3 +329,13 @@
 2020-10-06 20:06:56.4588 INFO User chose to exit the application
 2020-10-06 20:08:13.9476 WARN User entry is a invalid Format
 2020-10-06 20:08:20.4621 INFO User chose to exit the application
+2020-10-07 09:02:36.5004 INFO User entered a valid first name
+2020-10-07 09:02:38.3979 INFO User entered a valid last name
+2020-10-07 09:02:43.8873 INFO User entered a valid Email
+2020-10-07 09:02:48.9133 INFO User entered a valid mobile number
+2020-10-07 09:03:00.2019 WARN User entry is a invalid Format
+2020-10-07 09:03:28.7805 INFO User entered a valid first name
+2020-10-07 09:03:30.2671 INFO User entered a valid last name
+2020-10-07 09:03:34.3458 INFO User entered a valid Email
+2020-10-07 09:03:38.3643 INFO User entered a valid mobile number
+2020-10-07 09:03:45.9245 INFO User entered a validpassword

@@ -66,7 +66,7 @@ namespace UserRegistration
         /// <summary>
         /// Validates the first name.
         /// </summary>
-        private bool ValidateFormat(string userEntry, string pattern)
+        public bool ValidateFormat(string userEntry, string pattern)
         {
             //If the first name is valid
             if (Regex.IsMatch(userEntry, pattern))
@@ -155,7 +155,7 @@ namespace UserRegistration
             }
             return true;
         }
-        public void ValidateSampleEmail()
+        public bool ValidateSampleEmail()
         {
             string patternOfEmail = "^[a-zA-Z0-9]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$";
             string[] sampleEmail = {"abc@yahoo.com","abc-100@yahoo.com","abc.100@yahoo.com","abc111@abc.com","abc-100@abc.net","abc.100@abc.com.au",
@@ -164,9 +164,12 @@ namespace UserRegistration
             foreach (string sample in sampleEmail)
             {
                 if (Regex.IsMatch(sample, patternOfEmail))
+                {
                     Console.WriteLine(sample);
-
+                    return true;
+                }
             }
+            return false;
         }
 
     }      
