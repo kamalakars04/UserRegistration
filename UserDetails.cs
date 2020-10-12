@@ -74,9 +74,10 @@ namespace UserRegistration
                 Console.WriteLine("\n{0} is a valid format", userEntry);
                 return true;
             }
-            //If the first Name is invalid   
+             //If the first Name is invalid   
             else
             {
+                throw new UserEntryException("Invalid Entry");
                 logger.Warn("User entry is a invalid Format");
                 Console.WriteLine("\nThe entered format is invalid");
                 if (!DisplayFormat(pattern)) return false;
