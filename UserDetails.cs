@@ -25,7 +25,7 @@ namespace UserRegistration
         public string mobileNum;
         public string password;
 
-        internal void userRegistration()
+        public void userRegistration()
         {
             // User to input first Name
             Console.WriteLine("\nEnter the first name");
@@ -89,7 +89,7 @@ namespace UserRegistration
         /// </summary>
         /// <param name="pattern">The pattern.</param>
         /// <returns></returns>
-        private bool DisplayFormat(string pattern)
+        public bool DisplayFormat(string pattern)
         {
             if (pattern == patternOfFirstName)
             {
@@ -145,7 +145,7 @@ namespace UserRegistration
         /// Tries the again.
         /// </summary>
         /// <returns></returns>
-        private bool TryAgain()
+        public bool TryAgain()
         {
             Console.WriteLine("Press Y to enter again or other key to exit");
             //If user want to exit
