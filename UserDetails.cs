@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using System.Text.RegularExpressions;
-using NLog;
-
-
-namespace UserRegistration
+﻿namespace UserRegistration
 {
+    using System;
+    using System.Text.RegularExpressions;
+    using NLog;
+
     public class UserDetails
     {
         public readonly Logger logger = LogManager.GetCurrentClassLogger();
@@ -18,6 +14,7 @@ namespace UserRegistration
         const string patternOfEmail = "^[a-zA-Z0-9]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$";
         const string patternOfMobile = "^[0-9]{2}[ ][0-9]{10}$";
         const string patternOfPassword = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[^0-9a-zA-Z])(?!.*[^0-9a-zA-Z].*[^0-9a-zA-Z]).{8,}$";
+
         //variables
         public string firstName;
         public string lastName;
@@ -25,40 +22,49 @@ namespace UserRegistration
         public string mobileNum;
         public string password;
 
+        /// <summary>
+        /// Registration of user
+        /// </summary>
         public void userRegistration()
         {
             // User to input first Name
             Console.WriteLine("\nEnter the first name");
             firstName = Console.ReadLine();
+
             //if first name is invalid then exit
             if (!ValidateFormat(firstName, patternOfFirstName)) return;
             logger.Info("User entered a valid first name");
+
             //user to input last name
             Console.WriteLine("\nEnter the last name");
             lastName = Console.ReadLine();
+
             //if last name is invalid then exit
             if (!ValidateFormat(lastName, patternOfLastName)) return;
             logger.Info("User entered a valid last name");
+
             //user to input email
             Console.WriteLine("\nEnter the Email");
             email = Console.ReadLine();
+
             //if email is invalid
             if (!ValidateFormat(email,patternOfEmail)) return;
             logger.Info("User entered a valid Email");
+
             //User to input mobile number
             Console.WriteLine("\nEnter the mobile number");
             mobileNum = Console.ReadLine();
+
             //if mobile number is invalid
             if (!ValidateFormat(mobileNum, patternOfMobile)) return;
             logger.Info("User entered a valid mobile number");
+
             //User to input Password
             Console.WriteLine("\nEnter the password");
             password = Console.ReadLine();
+
             //if password is invalid
-            //if (password.Length >= 8)
-            //{
-              if(!ValidateFormat(password, patternOfPassword)) return;
-            //}
+            if(!ValidateFormat(password, patternOfPassword)) return;
             logger.Info("User entered a validpassword");
             Console.WriteLine("User Registration Successful");
 
@@ -68,13 +74,13 @@ namespace UserRegistration
         /// </summary>
         public bool ValidateFormat(string userEntry, string pattern)
         {
-            //If the first name is valid
+            //If the first name is valid say valid format
+            //else throw exception  
             if (Regex.IsMatch(userEntry, pattern))
             {
                 Console.WriteLine("\n{0} is a valid format", userEntry);
                 return true;
             }
-             //If the first Name is invalid   
             else
             {
                 throw new UserEntryException("Invalid Entry");
@@ -95,6 +101,7 @@ namespace UserRegistration
             {
                 Console.WriteLine("Name must start with capital and have minimum 3 characters");
                 if (!TryAgain()) return false;
+
                 //If user wants to enter the name again
                 Console.WriteLine("\nEnter the name");
                 firstName = Console.ReadLine();
@@ -105,6 +112,7 @@ namespace UserRegistration
             {
                 Console.WriteLine("Name must start with capital and have minimum 3 characters");
                 if (!TryAgain()) return false;
+
                 //If user wants to enter the name again
                 Console.WriteLine("\nEnter the name");
                 lastName = Console.ReadLine();
@@ -115,6 +123,7 @@ namespace UserRegistration
             {
                 Console.WriteLine("Make sure that @ and . are in correct positions");
                 if (!TryAgain()) return false;
+
                 //If user wants to enter the name again
                 Console.WriteLine("\nEnter the email");
                 email = Console.ReadLine();
@@ -125,6 +134,7 @@ namespace UserRegistration
             {
                 Console.WriteLine("Make sure that you enter country code and space then mobile number");
                 if (!TryAgain()) return false;
+
                 //If user wants to enter the name again
                 Console.WriteLine("\nEnter the mobile number");
                 mobileNum = Console.ReadLine();
@@ -134,6 +144,7 @@ namespace UserRegistration
             {
                 Console.WriteLine("Make sure there are atleast 8 characters, one capital letter");
                 if (!TryAgain()) return false;
+
                 //If user wants to enter the name again
                 Console.WriteLine("\nEnter the password");
                 password = Console.ReadLine();
@@ -148,6 +159,7 @@ namespace UserRegistration
         public bool TryAgain()
         {
             Console.WriteLine("Press Y to enter again or other key to exit");
+
             //If user want to exit
             if (Console.ReadLine().ToUpper() != "Y")
             {
@@ -156,6 +168,11 @@ namespace UserRegistration
             }
             return true;
         }
+
+        /// <summary>
+        /// Validates the sample email.
+        /// </summary>
+        /// <returns></returns>
         public bool ValidateSampleEmail()
         {
             string patternOfEmail = "^[a-zA-Z0-9]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$";

@@ -1,47 +1,49 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using UserRegistration;
-
 namespace MSTestForUserRegistration
 {
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using UserRegistration;
+
     [TestClass]
     public class UnitTest1
     {
         /// <summary>
         /// When given Valid Password then expect true.
         /// </summary>
-        /// <param name="password"></param>
-        /// <param name="pattern"></param>
+        /// <param name="password">password</param>
+        /// <param name="pattern">pattern</param>
         [DataRow("Kamal@99", "^(?=.*[A-Z])(?=.*[0-9])(?=.*[^0-9a-zA-Z])(?!.*[^0-9a-zA-Z].*[^0-9a-zA-Z]).{8,}$")]
         [TestMethod]
-        public void TestValidPassword(string password , string pattern)
+        public void TestValidPassword(string password, string pattern)
         {
-             //Arrange
+            // Arrange
             UserDetails userDetails = new UserDetails();
-             //ACT
-            var actual = userDetails.ValidateFormat(password , pattern);
-             //Assert
-            Assert.AreEqual(true , actual);
+
+            // ACT
+            var actual = userDetails.ValidateFormat(password, pattern);
+
+            // Assert
+            Assert.AreEqual(true, actual);
         }
 
         /// <summary>
         /// When given invalid password then catches exception
         /// </summary>
-        /// <param name="password">The name.</param>
-        /// <param name="pattern">The pattern.</param>
+        /// <param name="password">password</param>
+        /// <param name="pattern">pattern</param>
         [DataRow("kamal@99", "^(?=.*[A-Z])(?=.*[0-9])(?=.*[^0-9a-zA-Z])(?!.*[^0-9a-zA-Z].*[^0-9a-zA-Z]).{8,}$")]
         [TestMethod]
         public void TestInvalidPassword(string password, string pattern)
         {
-            //Arrange
+            // Arrange
             UserDetails userDetails = new UserDetails();
-            //ACT
             try
             {
+                // ACT
                 var actual = userDetails.ValidateFormat(password, pattern);
             }
-            //Assert
             catch (UserEntryException e)
             {
+                // Assert
                 Assert.AreEqual("Invalid Entry", e.Message);
             }
         }
@@ -55,11 +57,13 @@ namespace MSTestForUserRegistration
         [TestMethod]
         public void TestValidName(string password, string pattern)
         {
-            //Arrange
+            // Arrange
             UserDetails userDetails = new UserDetails();
-            //ACT
+            
+            // ACT
             var actual = userDetails.ValidateFormat(password, pattern);
-            //Assert
+            
+            // Assert
             Assert.AreEqual(true, actual);
         }
 
@@ -72,16 +76,16 @@ namespace MSTestForUserRegistration
         [TestMethod]
         public void TestInvalidName(string name, string pattern)
         {
-             //Arrange
+            // Arrange
             UserDetails userDetails = new UserDetails();
-            //ACT
             try
             {
+                // ACT
                 var actual = userDetails.ValidateFormat(name, pattern);
             }
-             //Assert
-            catch(UserEntryException e)
+            catch (UserEntryException e)
             {
+                // Assert
                 Assert.AreEqual("Invalid Entry", e.Message);
             }
         }
@@ -89,23 +93,22 @@ namespace MSTestForUserRegistration
         /// <summary>
         /// When given invalid email then it catches exception
         /// </summary>
-        /// <param name="email">The password.</param>
+        /// <param name="email">The email.</param>
         /// <param name="pattern">The pattern.</param>
         [DataRow("Kamal", "^[a-zA-Z0-9]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$")]
         [TestMethod]
         public void TestInvalidEmail(string email, string pattern)
         {
-            //Arrange
+            // Arrange
             UserDetails userDetails = new UserDetails();
-            //ACT
-            //ACT
             try
             {
+                // ACT
                 var actual = userDetails.ValidateFormat(email, pattern);
             }
-            //Assert
             catch (UserEntryException e)
             {
+                // Assert
                 Assert.AreEqual("Invalid Entry", e.Message);
             }
         }
@@ -113,18 +116,20 @@ namespace MSTestForUserRegistration
         /// <summary>
         /// When given valid email then expect true
         /// </summary>
-        /// <param name="email"></param>
-        /// <param name="pattern"></param>
+        /// <param name="email">The email.</param>
+        /// <param name="pattern">The pattern.</param>
         [DataRow("Kamal.abc@xyz.co", "^[a-zA-Z0-9]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$")]
         [DataRow("kamalakars04@gmail.com", "^[a-zA-Z0-9]+([.+_-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]+([.][a-zA-Z]{2})?$")]
         [TestMethod]
         public void TestValidEmail(string email, string pattern)
         {
-            //Arrange
+            // Arrange
             UserDetails userDetails = new UserDetails();
-             //ACT
+
+            // ACT
             var actual = userDetails.ValidateFormat(email, pattern);
-            //Assert
+            
+            // Assert
             Assert.AreEqual(true, actual);
         }
 
@@ -137,33 +142,35 @@ namespace MSTestForUserRegistration
         [TestMethod]
         public void TestValidPhoneNumber(string phoneNumber, string pattern)
         {
-            //Arrange
+            // Arrange
             UserDetails userDetails = new UserDetails();
-            //ACT
+            
+            // ACT
             var actual = userDetails.ValidateFormat(phoneNumber, pattern);
-            //Assert
+            
+            // Assert
             Assert.AreEqual(true, actual);
         }
 
         /// <summary>
         /// When given valid Phone number then expext true
         /// </summary>
-        /// <param name="phoneNum"></param>
-        /// <param name="pattern"></param>
+        /// <param name="phoneNum">The phoneNum</param>
+        /// <param name="pattern">The Pattern</param>
         [DataRow("91 895678965", "^[0-9]{2}[ ][0-9]{10}$")]
         [TestMethod]
-        public void TestInvalidPhoneNumber(string phoneNum , string pattern)
+        public void TestInvalidPhoneNumber(string phoneNum, string pattern)
         {
-            //Arrange
+            // Arrange
             UserDetails userDetails = new UserDetails();
-            //ACT
             try
             {
+                // ACT
                 var actual = userDetails.ValidateFormat(phoneNum, pattern);
             }
-            //Assert
             catch (UserEntryException e)
             {
+                // Assert
                 Assert.AreEqual("Invalid Entry", e.Message);
             }
         }
